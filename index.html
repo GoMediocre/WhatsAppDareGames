@@ -3,56 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>whatsapp_games</title>
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <title>Thalapathy Veriyan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  div {
-    background-color: aquamarine;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 150px;
-    height: 100px;
-    border: 3px solid green;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  @media all and (max-width:500px) {
-    dev {
-      width: 100%;
-    }
-  }
-  
-</style>
 
 <body>
-  <div id="container">
-    <p id="content"></p>
-    <p id="result"></p>
+  <div class="container">
+      <div class="dark-texture"></div>
+      <div class="vijay"></div>
+      <h4>you are my</h4>
+      <h3 id="randomText"></h3>
   </div>
-  
+  <script src="script.js"></script>
 </body>
-
-<script>
-  window.onload = () => {
-    var list = ["alex", "vignesh","saravana", "sparrow", "amsel", "kumar"];
-    console.log(list);
-
-    var startTime = new Date().getTime();
-    var interval = setInterval(() => {
-      const random = Math.floor(Math.random() * list.length);
-      document.getElementById("content").innerHTML = list[random];
-      if (new Date().getTime() - startTime > 5000) {
-        document.getElementById("result").innerHTML = "You are -> " + list[random];
-        clearInterval(interval);
-      }
-    }, 50);
-  }
-</script>
-
 </html>
