@@ -9,36 +9,84 @@
     font-family: Hyperwave2;
 }
 
-.container h4 {
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.dark-texture {
+    width: 100%;
+    height: 100%;
+    z-index: 2px;
+    
     position: absolute;
+    
+    background: url("./DarkTexture.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.vijay {
+    width: 100%;
+    height: 100%;
+    z-index: 0px;
+    
+    background: url("./vijay2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container h4 {
+    width: 100%;
+    position: absolute;
+    
+    top: 40%;
+    left: 0px;
+    right: 0px;
+    
     font-size: 90px;
     font-weight: 100;
-    top: 100px;
-    left: 63px;
+    text-align: center;
     color: #ff3c00;
 }
 
 .container h3 {
+    width: 100%;
     position: absolute;
+    
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    
     font-size: 120px;
     font-weight: 100;
-    top: 150px;
-    left: 31px;
+    text-align: center;
     color: #ffd000;
 }
 
-@media (max-width:500px) {
-    .container {
-        width: 100vw;
-        height: 100vh;
-    }
+.container h6 {
+    width: 100%;
+    position: absolute;
+    
+    top: 65%;
+    left: 0px;
+    right: 0px;
+    
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffd000;
+}
+
+
+@media (max-width:600px) {
 
     .dark-texture {
         background: url("./DarkTexture.png");
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: cover;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         position: absolute;
         z-index: 2px;
     }
@@ -47,8 +95,8 @@
         background: url("./vijay.png");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         z-index: 0px;
     }
     
@@ -80,5 +128,77 @@
         text-align: center;
 
         color: #FF9900;
+    }
+
+    .container h6 {
+        width: 100%;
+        position: absolute;
+        
+        top: 520px;
+        left: 0px;
+        right: 0px;
+        
+        font-size: 60px;
+        font-weight: 100;
+        text-align: center;
+        color: #ffd000;
+    }
+}
+
+
+@media (min-width:600px) and (max-width:700px) {
+    .vijay {
+        background: url("./vijay2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0px;
+    }
+}
+
+
+@media (min-width:700px) and (max-width:800px) {
+    .vijay {
+        background: url("./vijay2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0px;
+    }
+}
+
+@media (min-width:800px) and (max-width:900px) {
+    .vijay {
+        background: url("./vijay2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1050px) {
+    .vijay {
+        background: url("./vijay2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0px;
+    }
+}
+
+
+@media (min-width:1040px) and (max-width:1250px) {
+    .vijay {
+        background: url("./vijay2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0px;
     }
 }

@@ -1,5 +1,5 @@
 let isRandomizationAllowed = false;
-let list = ["Veriyan", "Thambi", "Annan", "Machan", "Nanba", "Nanbi"];
+let list = ["Veriyan", "Thambi", "Annan", "Machan", "Nanban", "Nanbi"];
 
 window.onload = () => {
   isRandomizationAllowed = true;
