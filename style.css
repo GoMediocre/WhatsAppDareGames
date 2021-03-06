@@ -78,6 +78,11 @@
     color: #ffd000;
 }
 
+.container h3, h4, h6 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}   
+
 
 @media (max-width:600px) {
 
