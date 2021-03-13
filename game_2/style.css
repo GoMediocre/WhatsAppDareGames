@@ -1,0 +1,44 @@
+.container {
+    overflow: hidden;
+    position: relative;
+    width: 40em; height: 27em;
+  }
+  .option, .option img { 
+      width: 100%; height: 100%;
+  }
+
+  .option {
+    overflow: hidden;
+    position: absolute;  
+    transform: skewX(-55.98deg);
+  }
+  .option:first-child {
+    left: -.25em;
+    transform-origin: 100% 0;
+  }
+  .option:last-child {
+    right: -.25em;
+    transform-origin: 0 100%;
+  }
+  .option img {
+    transform: skewX(55.98deg);
+    transform-origin: inherit;
+  }
+
+/* .container { width:200px; position:relative; }
+
+.lft { width:0; height:0; position:absolute; top:0; left:0;
+        border-style:solid; 
+        border-width:0 0 2px 2px; 
+        border-color:transparent transparent transparent orange;
+}
+
+.rgt { width:0; height:0;  position:absolute; top:0; right:0;
+        border-style:solid;
+        border-width:0 0 2px 2px;
+        border-color:transparent transparent #007bff transparent;
+}
+
+.lft-lbl { position:absolute; top:160px; left:20px; }
+
+.rgt-lbl { position:absolute; top:20px; right:20px; z-index:99; } */
